@@ -19,16 +19,18 @@
                     <option value="TelAviv">Tel Aviv</option>
                     <option value="Haifa">Haifa</option>
                 </select>
-                <input type="date" name="date_from" min="2022-12-19" max="2023-01-03">
-                <input type="date" name="date_to" min="2022-12-19" max="2023-01-03">
+                <input id="date_from_field" type="date" name="date_from" min="2022-12-19" max="2023-01-03">
+                <input id="date_to_field" type="date" name="date_to" min="2022-12-19" max="2023-01-03">
                 <input type="number" name="hour_from">
                 <input type="number" name="hour_to">
+                <p id="hours_error"></p>
                 <button type="submit">Search</button>
                 <button type="reset">Reset</button>
             </form>
         </div>
         <div class="temperatures_list">
             <button>Show Temperatures List</button>
+            <p id="results_list"></p>
         </div>
 </section>
     <script src="src/main.js" type="module"></script>
